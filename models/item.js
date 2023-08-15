@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const itemSchema = require('./item');
+
 
 require('./category');
 
