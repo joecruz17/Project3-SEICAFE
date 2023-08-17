@@ -1,4 +1,4 @@
-import styles from './OrderListItem.css';
+import styles from './OrderListItem.module.scss';
 
 export default function OrderListItem({ order, isSelected, handleSelectOrder }) {
 return (

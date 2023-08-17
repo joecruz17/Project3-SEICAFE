@@ -1,22 +1,16 @@
-import About from '../pages/About';
-import Home from '../pages/Home';
-import Contact from '../pages/Contact';
+import NewOrderPage from '../pages/NewOrderPage/NewOrderPage';
+import OrderHistoryPage from '../pages/OrderHistoryPage/OrderHistoryPage';
 
 const routes = [
 	{
-		Component: Contact,
-		key: 'Contact',
-		path: '/contact'
+		Component: NewOrderPage,
+		key: 'NewOrder',
+		path: '/orders/new'
 	},
 	{
-		Component: Home,
-		key: 'Home',
-		path: '/'
-	},
-	{
-		Component: About,
-		key: 'About',
-		path: '/about'
+		Component: OrderHistoryPage,
+		key: 'OrderHistory',
+		path: '/orders'
 	}
 ];
 

@@ -16,7 +16,7 @@ const userSchema = new Schema({
 
     password: {
         type:String,
-        trim: tryue,
+        trim: true,
         minlength: 3,
         required: true
     }
@@ -36,4 +36,4 @@ userSchema.pre('save', async function(next) {
     return next();
 });
 
-module,exports = mongoose.model('User', userSchema)
+module.exports = mongoose.model('User', userSchema)

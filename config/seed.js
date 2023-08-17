@@ -8,18 +8,18 @@ const Item = require('../models/item');
 
   await Category.deleteMany({});
   const categories = await Category.create([
-    {name: 'Sandwiches', sortOrder: 10},
-    {name: 'Seafood', sortOrder: 20},
-    {name: 'Mexican', sortOrder: 30},
-    {name: 'Italian', sortOrder: 40},
-    {name: 'Sides', sortOrder: 50},
-    {name: 'Desserts', sortOrder: 60},
-    {name: 'Drinks', sortOrder: 70},
+    {name: 'Water', sortOrder: 10},
+    {name: 'Grass', sortOrder: 20},
+    {name: 'Fire', sortOrder: 30},
+    {name: 'Dragon', sortOrder: 40},
+    {name: 'Electric', sortOrder: 50},
+    {name: 'Steel', sortOrder: 60},
+    {name: 'Ghost', sortOrder: 70},
   ]);
 
   await Item.deleteMany({});
   const items = await Item.create([
-    {name: 'Hamburger', emoji: '🍔', category: categories[0], price: 5.95},
+    {name: 'Hamburger', emoji: '', category: categories[0], price: 5.95},
     {name: 'Turkey Sandwich', emoji: '🥪', category: categories[0], price: 6.95},
     {name: 'Hot Dog', emoji: '🌭', category: categories[0], price: 3.95},
     {name: 'Crab Plate', emoji: '🦀', category: categories[1], price: 14.95},
