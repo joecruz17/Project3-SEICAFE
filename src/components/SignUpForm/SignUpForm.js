@@ -42,7 +42,7 @@ render() {
   const disable = this.state.password !== this.state.confirm;
   return (
     <div>
-      <div className="form-container">
+      <div className={styles.form-container}>
         <form autoComplete="off" onSubmit={this.handleSubmit}>
           <label>Name</label>
           <input type="text" name="name" value={this.state.name} onChange={this.handleChange} required />
