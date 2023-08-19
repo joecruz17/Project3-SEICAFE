@@ -3,10 +3,11 @@
     display: grid;
     grid-template-columns: 3vw 15.35vw 5.75vw 5.25vw;
     padding: 1vmin 0;
-    color: var(--text-light);
-    background-color: red;
-    border-top: .1vmin solid orange;
+    color: white;
+    background-color: navy;
+    border-top: .1vmin black;
     font-size: 1.5vw;
+    font-weight: bold;
     }
     
     .LineItem:last-child {

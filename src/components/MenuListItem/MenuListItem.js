@@ -1,9 +1,11 @@
 import styles from './MenuListItem.module.scss';
+import InnerImageZoom from 'react-inner-image-zoom';
+
 
 export default function MenuListItem({ menuItem, handleAddToOrder }) {
   return (
     <div className={styles.MenuListItem}>
-      <div className={styles.emoji + ' ' + 'flex-ctr-ctr'}>{menuItem.emoji}</div>
+      <InnerImageZoom src={menuItem.imageUrl} zoomSrc={menuItem.imageUrl} width="90px" zoomScale=".4" hasSpacer={true}/>
       <div className={styles.name}>{menuItem.name}</div>
       <div className={styles.buy}>
         <span>${menuItem.price.toFixed(2)}</span>
