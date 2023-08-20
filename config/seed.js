@@ -8,30 +8,30 @@ const Item = require('../models/item');
 
   await Category.deleteMany({});
   const categories = await Category.create([
-    {name: 'Renaissance', sortOrder: 10},
-    {name: 'Roman Statues', sortOrder: 20},
-    {name: 'Abstract', sortOrder: 30},
-    {name: 'Nature', sortOrder: 40},
-    {name: 'Portraits', sortOrder: 50},
-    {name: 'Figures', sortOrder: 60},
-    {name: 'Anime', sortOrder: 70},
+    {name: 'Renaissance', sortOrder: 10}, //0
+    {name: 'Roman Statues', sortOrder: 20}, //1
+    {name: 'Abstract', sortOrder: 30}, //2
+    {name: 'Nature', sortOrder: 40}, //3
+    {name: 'Portraits', sortOrder: 50}, //4
+    {name: 'Figures', sortOrder: 60}, //5
+    {name: 'Anime', sortOrder: 70}, //6
   ]);
 
   await Item.deleteMany({});
   const items = await Item.create([
     {name: 'A Mothers Love', category: categories[0], price: 555.95, imageUrl: 'https://i.imgur.com/jc1fLf6.jpg'},
-    {name: 'Davinci', category: categories[0], price: 666.95, imageUrl: 'https://i.imgur.com/jc1fLf6.jpg'},
-    {name: 'Nero', category: categories[0], price: 395.95, imageUrl: 'https://i.imgur.com/jc1fLf6.jpg'},
-    {name: 'Crab Plate', emoji: '🦀', category: categories[1], price: 154.95, imageUrl: 'https://i.imgur.com/jc1fLf6.jpg'},
-    {name: 'Fried Shrimp', emoji: '🍤', category: categories[1], price: 133.95, imageUrl: 'https://i.imgur.com/jc1fLf6.jpg'},
-    {name: 'Whole Lobster', emoji: '🦞', category: categories[1], price: 325.95, imageUrl: 'https://i.imgur.com/jc1fLf6.jpg'},
-    {name: 'Taco', emoji: '🌮', category: categories[2], price: 331.95, imageUrl: 'https://i.imgur.com/jc1fLf6.jpg'},
-    {name: 'Burrito', emoji: '🌯', category: categories[2], price: 445.95, imageUrl: 'https://i.imgur.com/jc1fLf6.jpg'},
+    {name: 'Mona Lisa', category: categories[0], price: 666.95, imageUrl: 'https://i.imgur.com/MJ2SlI8.jpg'},
+    {name: 'Storm of Olympus', category: categories[0], price: 395.95, imageUrl: 'https://i.imgur.com/ZuEyqcy.jpg'},
+    {name: 'Aries', emoji: '🦀', category: categories[1], price: 154.95, imageUrl: 'https://i.imgur.com/3LuOIBA.jpg'},
+    {name: 'Icarus', emoji: '🍤', category: categories[1], price: 133.95, imageUrl: 'https://i.imgur.com/VK6QRoV.jpg'},
+    {name: 'Athena', emoji: '🦞', category: categories[1], price: 325.95, imageUrl: 'https://i.imgur.com/tnRZZuV.jpg'},
+    {name: 'A Black Hole', emoji: '🌮', category: categories[2], price: 331.95, imageUrl: 'https://i.imgur.com/nI0HzWA.jpg'},
+    {name: 'Soap Rose', emoji: '🌯', category: categories[2], price: 445.95, imageUrl: 'https://i.imgur.com/RNSy5WA.jpg'},
     {name: 'Pizza Slice', emoji: '🍕', category: categories[3], price: 223.95, imageUrl: 'https://i.imgur.com/jc1fLf6.jpg'},
     {name: 'Spaghetti', emoji: '🍝', category: categories[3], price: 711.95, imageUrl: 'https://i.imgur.com/jc1fLf6.jpg'},
     {name: 'Garlic Bread', emoji: '🍞', category: categories[3], price: 100.95, imageUrl: 'https://i.imgur.com/jc1fLf6.jpg'},
-    {name: 'French Fries', emoji: '🍟', category: categories[4], price: 212.95, imageUrl: 'https://i.imgur.com/jc1fLf6.jpg'},
-    {name: 'Green Salad', emoji: '🥗', category: categories[4], price: 300.95, imageUrl: 'https://i.imgur.com/jc1fLf6.jpg'},
+    {name: 'The Queen', emoji: '🍟', category: categories[4], price: 212.95, imageUrl: 'https://i.imgur.com/V5vhUe4.jpg'},
+    {name: 'Shades of Color', emoji: '🥗', category: categories[4], price: 300.95, imageUrl: 'https://i.imgur.com/8rL59Mo.jpg'},
     {name: 'Ice Cream', emoji: '🍨', category: categories[5], price: 112.95, imageUrl: 'https://i.imgur.com/jc1fLf6.jpg'},
     {name: 'Cup Cake', emoji: '🧁', category: categories[5], price: 110.95, imageUrl: 'https://i.imgur.com/jc1fLf6.jpg'},
     {name: 'Custard', emoji: '🍮', category: categories[5], price: 232.95, imageUrl: 'https://i.imgur.com/jc1fLf6.jpg'},
